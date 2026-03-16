@@ -1,3 +1,9 @@
+import os
+import sys
+
+# Ensure project root is on the Python path so tests can import logic_utils
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+
 from logic_utils import (
     get_range_for_difficulty,
     parse_guess,

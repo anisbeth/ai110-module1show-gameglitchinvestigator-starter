@@ -8,9 +8,7 @@ The first time I ran the game it loaded in Streamlit and looked mostly normal, b
 
 ## 2. How did you use AI as a teammate?
 
-For this project I used GitHub Copilot and ChatGPT to help review and understand the code. One helpful suggestion from AI was moving the game logic functions out of `app.py` and into `logic_utils.py`. This made the code easier to read and separated the UI from the core logic. I verified that this change worked by running the game again and also running `pytest` to make sure the tests still passed.
-
-One misleading suggestion from the original AI-generated code was converting the secret number into a string during certain turns. This caused incorrect comparisons between the guess and the secret number. I realized this was a problem after reading through the code carefully and removed the string conversion so the secret number always stays an integer.
+For this project I used GitHub Copilot and Claude to help review and understand the code. One helpful suggestion was moving the game logic functions out of app.py and into logic_utils.py. This made the code easier to read and separated the UI from the core logic. I verified that this change worked by running pytest and also running the Streamlit app to make sure the game still behaved correctly.
 
 ---
 
